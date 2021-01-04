@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, React (with JSX)</title>
+</head>
+<body>
+    <!-- 1. empty div -->
+    <div id="root"></div>
+
+    <!--2. React-->
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js" ></script>
+<!--3. React Dom-->
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" ></script>
+<!--Babel-->
+<script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+    let name = "Alexander"
+    // 4. React element
+    const element = (
+    <div>
+        <h1>Hello, {name+"!"} (YES JSX)</h1>
+    </div>
+    )
+    
+
+    // 5. actual render to the page
+    ReactDOM.render(element, document.getElementById("root"))
+
+</script>
+
+</body>
+</html>
